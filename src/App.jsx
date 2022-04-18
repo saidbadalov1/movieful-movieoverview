@@ -82,13 +82,17 @@ function App() {
 
   return (
     <>
-      <h1 className='movies-h1'>MOVIEFUL</h1>
+    <header>
+
+    <h1 className='movies-h1'>MOVIEFUL</h1>
       <div className='searchbar'>
         <form onSubmit={handleSubmit}>
           <input id='idc' onChange={debouncedResults} type="text" placeholder='Search a movie...' className='search-input' />
         </form>
       </div>
-      <hr />
+      
+    </header>
+
       <div className='movies-container'>
         {renderContent()}
       </div>
